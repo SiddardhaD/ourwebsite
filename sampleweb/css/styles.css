@@ -1,0 +1,272 @@
+:root {
+    --text-color:#4A556C;          /* Default text color */
+    --button-color: #20AD96;       /* use this color 20AD96*/
+    --heading-color: #007BFF;    /* Default heading color */
+    --background-color: white;       /* Background color for header */
+    --landing-background-color: #FAF8F6; /* Background color for landing page */
+    --landing-text-color: #333461; /* Text color for landing page */
+}
+
+body {
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: var(--heading-color);
+}
+
+button {
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+main {
+    max-width: 1440px; /* Set max width to match Figma design */
+    margin: 0 auto;    /* Center the content */
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    main {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 2.5em; /* Adjust heading size for smaller screens */
+    }
+    button {
+        padding: 8px 16px; /* Adjust button size */
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em; /* Further adjust heading size */
+    }
+    h2 {
+        font-size: 1.5em; /* Adjust subheading size */
+    }
+    button {
+        width: 100%; /* Make buttons full width */
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.5em; /* Smaller heading size for mobile */
+    }
+    h2 {
+        font-size: 1.2em; /* Smaller subheading size for mobile */
+    }
+    section {
+        padding: 10px; /* Reduce padding for mobile */
+    }
+}
+
+.landing-page {
+    width: 100%;
+    height: 703px; /* Set height as per your requirement */
+    background-color: var(--landing-background-color); /* Use the variable for background color */
+    display: flex;
+    justify-content: space-between; /* Space between text and image */
+    align-items: center; /* Center content vertically */
+    padding: 0 100px; /* Add some padding */
+}
+
+.landing-content {
+    max-width: 600px; /* Limit the width of the content */
+}
+
+.landing-content h1 {
+    font-family: 'Kumbh Sans', sans-serif; /* Apply Kumbh Sans font */
+    font-weight: 800; /* Extra bold weight */
+    font-size: 72px; /* Set font size */
+    line-height: 90px; /* Set line height */
+    color: var(--landing-text-color); /* Set font color */
+    padding-left: 85px; /* Left padding */
+    padding-top: 10px; /* Top padding */
+    max-width: 520px; /* Set max width for the text container */
+    margin: 0; /* Remove default margin */
+}
+
+.landing-content h2 {
+    font-family: 'Kumbh Sans', sans-serif; /* Apply Kumbh Sans font */
+    font-size: 16px; /* Set font size */
+    font-weight: 400; /* Regular weight */
+    line-height: 24px; /* Set line height */
+    text-align: left; /* Left alignment */
+    padding-left: 85px; /* Left padding */
+    opacity: 0.5;
+    color: var(--text-color); /* Use text color from styles.css */
+    margin: 0; /* Remove default margin */
+}
+
+.landing-content p {
+    font-family: 'Kumbh Sans', sans-serif; /* Apply Kumbh Sans font */
+    font-size: 18px; /* Set font size */
+    font-weight: 400; /* Regular weight */
+    color: #4A556C; /* Set font color */
+    line-height: 30px; /* Set line height */
+    padding-left: 85px; /* Left padding */
+    padding-top: 20px; /* Top padding */
+    max-width: 545px; /* Set max width for the text container */
+    margin: 0; /* Remove default margin */
+}
+
+.landing-content .cta-button {
+    margin-top: 20px; /* Space above the button */
+    margin-left: 85px; /* Left padding */
+}
+
+.image-container {
+    position: relative; /* Position relative for absolute positioning of success rate */
+    margin-right: 166px; /* Add margin to the right side */
+}
+
+.girl-image {
+    width: 603px; /* Set width as per your requirement */
+    height: 502px; /* Set height as per your requirement */
+    object-fit:scale-down; /* Maintain aspect ratio and cover the area */
+}
+
+.success-rate {
+    position: absolute;
+    top: 20px; /* Adjust position as needed */
+    right: -50px; /* Adjust position as needed */
+    background-color: white; /* Background color for success rate */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text */
+}
+
+.success-rate span {
+    font-size: 2em; /* Adjust font size */
+    color: var(--heading-color); /* Use heading color */
+}
+
+.success-rate p {
+    margin: 0; /* Remove default margin */
+    color: var(--text-color); /* Use text color */
+}
+
+.top-asset {
+    width: 101px; /* Set width */
+    height: 15px; /* Set height */
+    margin-left: 31px; /* Left margin */
+    margin-top: 51px; /* Top margin */
+    margin-bottom: 60px; /* Bottom margin */
+}
+
+.top-asset-black {
+    width: 101px; /* Set width */
+    height: 20px; /* Set height */
+    margin: 40px 0; /* Adjust margin for this specific asset */
+}
+
+.services-section {
+    width: 100%;
+    height: 734px; /* Set height as per your requirement */
+    background-color: white; /* Background color */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    padding: 0 100px; /* Add some padding */
+    flex-direction: column; /* Column layout */
+    align-items: flex-start; /* Align items to the start */
+}
+
+.services-content {
+    display: flex; /* Use flexbox to arrange items in a row */
+    justify-content: space-between; /* Space between items */
+    width: 100%; /* Full width */
+}
+
+.services-content h2 {
+    font-family: 'Kumbh Sans', sans-serif; /* Apply Kumbh Sans font */
+    font-size: 48px; /* Set font size */
+    font-weight: 800; /* Extra bold weight */
+    line-height: 56px; /* Set line height */
+    color: #333461; /* Set font color */
+    max-width: 492px; /* Set max width for the text container */
+    padding-left: 20px; /* Left padding */
+    margin: 0; /* Remove default margin */
+    margin-top: 100px;
+}
+
+.services-content p {
+    font-family: 'Kumbh Sans', sans-serif; /* Apply Kumbh Sans font */
+    font-size: 17px; /* Set font size */
+    font-weight: 400; /* Regular weight */
+    color: #4A556C; /* Set font color */
+    line-height: 25px; /* Set line height */
+    max-height: 200px; /* Set max height for the text container */
+    max-width: 545px; /* Set max width for the text container */
+    overflow: hidden; /* Hide overflow if text exceeds max height */
+    margin: 10px 0 40px; /* Add margin */
+    margin-top: 100px;
+    margin-right: 100px;
+}
+
+.services-list {
+    display: flex; /* Flexbox for service items */
+    justify-content: space-between; /* Space between items */
+    width: 100%; /* Full width */
+    flex-wrap: wrap; /* Allow items to wrap if necessary */
+}
+
+.service-item {
+    flex: 1; /* Equal width for each item */
+    margin: 0 20px; /* Margin between items */
+    text-align: center; /* Center text */
+}
+
+.service-icon {
+    width: 60px; /* Set icon width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 30px; /* Space below icon */
+    display: block; /* Ensure the image is treated as a block element */
+    margin-left: 0; /* Reset left margin */
+}
+
+.service-item h3 {
+    font-family: 'Kumbh Sans', sans-serif; /* Apply Kumbh Sans font */
+    font-size: 24px; /* Set font size */
+    font-weight: 700; /* Bold weight */
+    color: #041434; /* Set font color */
+    line-height: 32px; /* Set line height */
+    text-align: left; /* Left alignment */
+    margin: 10px 0; /* Margin above and below */
+}
+
+.service-item p {
+    font-family: 'Kumbh Sans', sans-serif; /* Apply Kumbh Sans font */
+    font-size: 16px; /* Set font size */
+    font-weight: 400; /* Regular weight */
+    color: #4A556C; /* Set font color */
+    line-height: 24px; /* Set line height */
+    margin: 0; /* Remove default margin */
+    text-align: left; /* Left alignment */
+    max-width: 300px; /* Set max width for the text container */
+}
